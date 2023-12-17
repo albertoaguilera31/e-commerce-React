@@ -40,12 +40,12 @@ const Navbar = () =>{
                 </li>
                 <li>
                     <NavLink 
-                    to='/electronic'
-                    onClick={()=> context.setSearchByCategory('electronic')}
+                    to='/electronics'
+                    onClick={()=> context.setSearchByCategory('electronics')}
                     className={({isActive})=>
                     isActive ? activeStyle: undefined
                     }>
-                        Electronic
+                        Electronics
                     </NavLink>
                 </li>
                 <li>

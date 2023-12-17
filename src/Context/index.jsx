@@ -38,13 +38,17 @@ export const ShoppingCartProvider = ({children})=>{
     const [searchByCategory, setSearchByCategory] = useState(null);
 
     useEffect(()=>{
-        fetch('https://api.escuelajs.co/api/v1/products')
+        fetch('https://fakestoreapi.com/products')
         .then(response=>response.json())
         .then(data=>setItems(data))
-
+    
       }, [])
 
-
+      /*fetch("https://fakestoreapi.com/products/https://api.escuelajs.co/api/v1/products")
+      .then((res) => res.json())
+      .then((data) => setItems(data));
+      }, [])*/
+      
       const filteredItemsByTitle =(items, searchByTitle)=>{
         return items?.filter(item=> item.title.toLowerCase().includes(searchByTitle.toLowerCase()))
       }
