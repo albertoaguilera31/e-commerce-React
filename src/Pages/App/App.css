@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.fondopantalla{
+    background-image: url('../../imagenFondo/fondoecommerce.jpg');
+}

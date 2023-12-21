@@ -13,10 +13,10 @@ import './App.css'
 const AppRoutes =()=>{
   let routes = useRoutes([
     {path: '/', element: <Home/>},
-    {path: '/clothes', element: <Home/>},
+    {path: "/men's clothing", element: <Home/>},
     {path: '/electronics', element: <Home/>},
-    {path: '/furnitures', element: <Home/>},
-    {path: '/toys', element: <Home/>},
+    {path: "/women's clothing", element: <Home/>},
+    {path: '/jewelery', element: <Home/>},
     {path: '/others', element: <Home/>},
     {path: '/my-account', element: <MyAccount/>},
     {path: '/my-order', element: <MyOrder />},
@@ -32,16 +32,23 @@ const AppRoutes =()=>{
 
 
 const App = ()=>{
+  const divStyle = {
+    backgroundImage: 'url("../../imagenFondo/fondoecommerce.jpg")',
+    backgroundSize: 'cover'
+    // Otros estilos según tus necesidades
+  };
 
   return (
-   <ShoppingCartProvider>
+   
+  <div style={ divStyle }>
+    <ShoppingCartProvider>
     <BrowserRouter>
       <AppRoutes/>
       <Navbar/>
       <CheckoutSideMenu/>
     </BrowserRouter>
    </ShoppingCartProvider> 
-    
+  </div>
   )
 }
 

@@ -30,12 +30,12 @@ const Navbar = () =>{
                 </li>
                 <li>
                     <NavLink 
-                    to='/clothes'
-                    onClick={()=> context.setSearchByCategory('clothes')}
+                    to="/men's clothing"
+                    onClick={()=> context.setSearchByCategory("men's clothing")}
                     className={({isActive})=>
                     isActive ? activeStyle: undefined
                     }>
-                        Clothes
+                        Men's clothing
                     </NavLink>
                 </li>
                 <li>
@@ -50,22 +50,22 @@ const Navbar = () =>{
                 </li>
                 <li>
                     <NavLink 
-                    to='/furniture'
-                    onClick={()=> context.setSearchByCategory('furniture')}
+                    to="/women's clothing"
+                    onClick={()=> context.setSearchByCategory("women's clothing")}
                     className={({isActive})=>
                     isActive ? activeStyle: undefined
                     }>
-                        Furniture
+                        Women's clothing
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                    to='/toys'
-                    onClick={()=> context.setSearchByCategory('toys')}
+                    to='/jewelery'
+                    onClick={()=> context.setSearchByCategory("jewelery")}
                     className={({isActive})=>
                     isActive ? activeStyle: undefined
                     }>
-                        Toys
+                        Jewelery
                     </NavLink>
                 </li>
                 <li>
